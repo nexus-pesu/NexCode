@@ -96,6 +96,10 @@ Their product is $x \cdot y = 12221$. The middle digit is $2$.
 
 ## Solution
 
+**Time Complexity:** $O(t)$
+
+**Space Complexity:** $O(1)$
+
 To solve this problem, we need to take care of a few cases. Problems with a lot of edge case handling is usually discouraged in competitive programming, but they do exist. This problem is good for practice on the same, we think.
 
 Let's take a look at the cases:
