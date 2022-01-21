@@ -82,6 +82,10 @@ c
 
 ## Solution
 
+**Time Complexity:** $O(n + q)$
+
+**Space Complexity:** $O(n)$
+
 After performing the given operations on the input string "clown", we get something like: $s =$ _clownnwolcclownnwolcclown..._
 
 We can notice that every $2n$ characters, the string repeats itself, and therefore we only need to care about the first $2n$ characters of $s$. That is, the $i^{th}$ character is the same as the $(2n + i^{th})$ character and the $(4n + i^{th})$ character and so on. We can take all those indices modulo $2n$ and print the character corresponding to that position.
