@@ -60,6 +60,10 @@ $-10^9 \le a_i \le 10^9$
 
 ## Solution
 
+**Time Complexity:** $O(n)$
+
+**Space Complexity:** $O(n)$
+
 Notice that we are only allowed to increase the values. So, the optimal solution will not include increasing the maximum number(s) $m$ in $a$ because if it did, then we would have to perform more operations to make the smaller elements equal to it.
 
 So, our goal is to make all elements of the array $a$ equal to the maximum number $m$ in $a$. But, Aryan can do operations only on the odd indices while Dhruv can do operations only on the even indices.
