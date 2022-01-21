@@ -91,6 +91,10 @@ In the fifth testcase, $10^6 = 1000000$. The last $5$ digits are $00000$.
 
 ## Solution
 
+**Time Complexity:** $O(t \cdot log_{2}{e})$
+
+**Space Complexity:** $O(1)$
+
 This problem requires knowing a simple trick from math. When we only care about the last few digits of the product/sum/(any other similar arithmetic operation) of numbers, we can discard the remaining prefix of digits and perform operations only on the ones we care about. For example, if we wanted to know the last digit of the product of $9817436 * 42424242$, we do not need to care about the anything but the last digit in the product, which is simply $6 * 2 = 12 \rightarrow 2$.
 
 For the last $p$ digits, we only need to perform the products for $p$ digits at a time and can get rid of the remaining prefix of digits. This can be easily done using modulo operation with mod as $10^p$.
