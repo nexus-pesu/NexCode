@@ -16,7 +16,7 @@ Since Aryan doesn't know how to solve the problem, he asks for your help. You ar
 
 Aryan does not tell you the values of $x$ and $y$ because the numbers could be very large to take as input. He instead gives you integers $k$ and $l$ - the number of digits in $x$ and $y$, respectively. 
 
-**Note:** $x$ and $y$ have the same parity, i.e. $x$ and $y$ are either both even or both odd.
+**Note:** $k$ and $l$ have the same parity, i.e. $k$ and $l$ are either both even or both odd.
 
 
 
