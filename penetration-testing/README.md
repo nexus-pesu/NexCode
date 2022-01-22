@@ -1,4 +1,4 @@
-# Perfect Array
+# Penetration Testing
 
 This problem was worth $1000$ points and was ranked easy.<br>The author of this problem is Aryan V S.
 
