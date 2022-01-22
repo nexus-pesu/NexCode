@@ -92,11 +92,11 @@ At the $1^{st}$ second, the following events occur:
 
 At the $2^{nd}$ second, the following events occur:
 
-- CyberShield hitpoints become $250 + 50 = 300$
+- CyberShield hitpoints become $280 + 50 = 330$
 
-- Let's choose Red teamers $a_3$ and $a_4$ to combine forces (the choice of a group to join forces with another group is yours to make). After this, the CyberNuke strengths become: $[60, 20, 60, 80, 100]$
+- Let's choose Red teamers $a_4$ to combine forces with the already existing group of $a_1$ and $a_5$ (the choice of a group to join forces with another group is yours to make). After this, the CyberNuke strengths become: $[90, 20, 30, 120, 150]$
 
-- CyberNukes are launched with total damage capacity of $60 + 20 + 60 + 80 + 100 = 320$
+- CyberNukes are launched with total damage capacity of $90 + 20 + 30 + 120 + 150 = 410$
 
 - As the damage is greater than or equal to the shield hitpoints, the Red team wins in $2$ seconds.
 
@@ -242,4 +242,31 @@ int main () {
 
   return 0;
 }
+```
+
+**Solution in Python:**
+
+```python
+n, H, k = map(int, input().split())
+a = sorted(map(int, input().split()), reverse = True)
+
+strength = sum(a)
+group_strength = a[0]
+strength -= a[0]
+
+for i in range(1, n):
+    group_strength += a[i]
+    strength -= a[i]
+    
+    shield = H + i * k
+    nukes = group_strength * (i + 1) + strength
+    
+    if nukes >= shield:
+        print(i)
+        exit()
+
+if n * group_strength >= H + n * k:
+    print(n)
+else:
+    print(-1)
 ```
