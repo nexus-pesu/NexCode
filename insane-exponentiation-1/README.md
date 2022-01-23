@@ -1,6 +1,6 @@
 # Insane Exponentiation 1
 
-This problem was worth $500$ points and was ranked easy. The authors of this problem are Aryan V S and Dhruv Chawla.
+This problem was worth $500$ points.<br>The authors of this problem are Aryan V S and Dhruv Chawla.
 
 **Note:** GitHub does not support LaTex in Markdown. If you want a more readable version of the problem, download the PDF file instead.
 
@@ -8,7 +8,7 @@ This problem was worth $500$ points and was ranked easy. The authors of this pro
 
 ## Story
 
-The problem is named "Insane Exponentiation 1" because we initially had another challenge related to exponentiation called "Insane Exponentiation 2" in the Hard category. It turned out to be very hard to solve ourselves and people we asked for help, and we decided to not spend more time on it and come up with a different problem.
+The problem is named "Insane Exponentiation 1" because we initially had another challenge related to exponentiation called "Insane Exponentiation 2" in the Hard category. It turned out to be very hard to solve ourselves and people we asked for help, and so we decided to not spend more time on it and come up with a different problem.
 
 
 
@@ -95,11 +95,11 @@ In the fifth testcase, $10^6 = 1000000$. The last $5$ digits are $00000$.
 
 **Space Complexity:** $O(1)$
 
-This problem requires knowing a simple trick from math. When we only care about the last few digits of the product/sum/(any other similar arithmetic operation) of numbers, we can discard the remaining prefix of digits and perform operations only on the ones we care about. For example, if we wanted to know the last digit of the product of $9817436 * 42424242$, we do not need to care about the anything but the last digit in the product, which is simply $6 * 2 = 12 \rightarrow 2$.
+This problem requires knowing a simple trick from math. When we only care about the last few digits of the product/sum/(any other similar arithmetic operation) of numbers, we can discard the remaining prefix of digits and perform operations only on the ones we care about. For example, if we wanted to know the last digit of the product of $9817436 \cdot 42424242$, we do not need to care about anything but the last digit in the product, which is simply $6 \cdot 2 = 12 \rightarrow 2$.
 
 For the last $p$ digits, we only need to perform the products for $p$ digits at a time and can get rid of the remaining prefix of digits. This can be easily done using modulo operation with mod as $10^p$.
 
-We also require a fast method to calculate powers of a number. The technique we can use for the same is called [Binary Exponentiation](https://cp-algorithms.com/algebra/binary-exp.html).
+We also require a fast method to calculate powers of a number (as $e$ can be up to $10^9$). The technique we can use for the same is called [Binary Exponentiation](https://cp-algorithms.com/algebra/binary-exp.html).
 
 **Solution in C++:**
 
