@@ -1,6 +1,6 @@
 # Find the One for Me
 
-This problem was worth $500$ points and was ranked easy. The author of this problem is Dhruv Chawla.
+This problem was worth $500$ points.<br>The authors of this problem are Aryan V S and Dhruv Chawla.
 
 **Note:** GitHub does not support LaTex in Markdown. If you want a more readable version of the problem, download the PDF file instead.
 
@@ -94,11 +94,15 @@ Their product is $x \cdot y = 12221$. The middle digit is $2$.
 6
 ```
 
+
+
 ## Solution
 
 **Time Complexity:** $O(t)$
 
 **Space Complexity:** $O(1)$
+
+The simple multiplication approach does not work because creating a string of $1$s based on the values of $k$ and $l$ will end up taking up too much memory. Also, multiplication is very slow for large numbers.
 
 To solve this problem, we need to take care of a few cases. Problems with a lot of edge case handling is usually discouraged in competitive programming, but they do exist. This problem is good for practice on the same, we think.
 
