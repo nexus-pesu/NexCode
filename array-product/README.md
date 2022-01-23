@@ -1,6 +1,6 @@
 # Perfect Array
 
-This problem was worth $1000$ points and was ranked medium. The author of this problem is Aryan V S.
+This problem was worth $1000$ points.<br>The author of this problem is Aryan V S.
 
 **Note:** GitHub does not support LaTex in Markdown. If you want a more readable version of the problem, download the PDF file instead.
 
