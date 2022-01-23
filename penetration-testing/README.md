@@ -1,6 +1,6 @@
 # Penetration Testing
 
-This problem was worth $1000$ points and was ranked easy.<br>The author of this problem is Aryan V S.
+This problem was worth $1000$ points.<br>The author of this problem is Aryan V S.
 
 **Note:** GitHub does not support LaTex in Markdown. If you want a more readable version of the problem, download the PDF file instead.
 
@@ -154,13 +154,15 @@ It can easily be seen that there is no way for the Red team to increase their da
 1
 ```
 
+
+
 ## Solution
 
 **Time Complexity:** $O(n \cdot log(n))$
 
 **Space Complexity:** $O(n)$
 
-Apologies for the long problem statement if that caused any problems for you. There are many problems with huge statements like these in competitive programming contests. Getting used to reading and navigating to the important sections of the statement is an important skill to develop.
+Apologies for the long problem statement if that caused any issues for you. There are many problems with huge statements like these in competitive programming contests. Getting used to reading and navigating to the important sections of the statement is an important skill to develop.
 
 The solution is to simply simulate what is being asked by the statement. If the Red teamers cannot defeat the Blue teamers at some time $t$, then it is always better for one of them to join forces with some group (as it increases the total damage output for the next second). Also, we only need to simulate for a duration of $n - 1$ seconds because at that point of time we have a single group with all $n$ attackers. We cannot increase the attack strength any more after that.
 
