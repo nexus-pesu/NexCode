@@ -1,6 +1,6 @@
 # Infinitely Finite
 
-This problem was worth $500$ points and was ranked easy. The authors of this problem are Aryan V S and Dhruv Chawla.
+This problem was worth $500$ points.<br>The authors of this problem are Aryan V S and Dhruv Chawla.
 
 **Note:** GitHub does not support LaTex in Markdown. If you want a more readable version of the problem, download the PDF file instead.
 
@@ -79,6 +79,8 @@ o
 l
 c
 ```
+
+
 
 ## Solution
 
