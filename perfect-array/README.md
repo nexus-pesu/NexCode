@@ -1,6 +1,6 @@
 # Perfect Array
 
-This problem was worth $500$ points and was ranked easy. The authors of this problem are Aryan V S and Dhruv Chawla.
+This problem was worth $500$ points.<br>The authors of this problem are Aryan V S and Dhruv Chawla.
 
 **Note:** GitHub does not support LaTex in Markdown. If you want a more readable version of the problem, download the PDF file instead.
 
@@ -68,7 +68,7 @@ Notice that we are only allowed to increase the values. So, the optimal solution
 
 So, our goal is to make all elements of the array $a$ equal to the maximum number $m$ in $a$. But, Aryan can do operations only on the odd indices while Dhruv can do operations only on the even indices.
 
-To make the values at odd indices same as the maximum value in the array, we must increment values at some indices as long as the minimum value is not equal to the $m$. Same applies for even indices.
+To make the values at odd indices same as the maximum value in the array, we must increment values at some indices as long as the minimum value is not equal to $m$. Same applies for even indices.
 
 **Solution in C++:**
 
@@ -102,7 +102,7 @@ int main () {
   for (int i = 1; i < n; i += 2)
     min_odd = std::min(min_odd, a[i]);
   
-  std::cout << 2 * max - min_odd - min_even << '\n';
+  std::cout << (max - min_odd) + (max - min_even) << '\n';
 
   return 0;
 }
