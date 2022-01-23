@@ -1,6 +1,6 @@
 # Definitely not a Nim Game
 
-This problem was worth $1500$ points and was ranked easy.<br>The author of this problem is Aryan V S.
+This problem was worth $1500$ points.<br>The author of this problem is Aryan V S.
 
 **Note:** GitHub does not support LaTex in Markdown. If you want a more readable version of the problem, download the PDF file instead.
 
@@ -95,9 +95,9 @@ Firstly, finding the maximum possible health that the last man standing will hav
 
 Let's, without the loss of generality, assume that if some person is attacked and their strength becomes negative, we can simply consider their strength to be 0. This way they are still eliminated but it allows us to observe an important property.
 
-In the statement, we are allowed to do the following operation: select two distinct $i$ and $j$ indices randomly and do $a_i = a_i - a_j$, where $a_j$ is the strength of the attacker and $a_i$ is the strength of the defender. Also, if both $a_i$ and $a_j$ is divisible by some $x$, then $a_i - a_j$ is also divisible by $x$. If we find the minimum possible value of $x$, we will have our answer. Why? Because it would always be possible to obtain $x$ after some of the above subtraction operations, and because $x$ is the minimum such value.
+In the statement, we are allowed to do the following operation: select two distinct $i$ and $j$ indices randomly and do $a_i = a_i - a_j$, where $a_j$ is the strength of the attacker and $a_i$ is the strength of the defender. Also, if both $a_i$ and $a_j$ is divisible by some $x$, then $a_i - a_j$ is also divisible by $x$.
 
-After some operations, we can always make it so that all values can be represented as some linear function of all other values of the array. We want to solve for the constants of these linear equations such that $n - 1$ values are non-positive and $1$ value is positive (and is also the minimum value possible).
+After some operations, we can always make it so that all values can be represented as some linear function of all other values of the array. We want to solve for the constants of these linear equations such that $n - 1$ values are  $0$, and $1$ value is positive (and is also the minimum value possible).
 
 Now, think about what the strengths look like after the last round of battle when finding the minimum, also keeping in mind the assumption from the first line of the solution. It would look something like: $[0,\ 0,\ ...,\ x,\ ...,\ 0,\ 0]$. That is, the minimum health $x$ and a bunch of $0$s. Consider this as the final state.
 
