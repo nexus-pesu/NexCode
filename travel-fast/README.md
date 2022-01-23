@@ -1,6 +1,6 @@
 # Travel Fast
 
-This problem was worth $1500$ points and was ranked easy.<br>The author of this problem is Aryan V S.
+This problem was worth $1500$ points.<br>The author of this problem is Aryan V S.
 
 **Note:** GitHub does not support LaTex in Markdown. If you want a more readable version of the problem, download the PDF file instead.
 
@@ -127,6 +127,7 @@ The total time taken is $14 + 28 = 42$ seconds.
 ```
 
 
+
 ## Solution
 
 **Time Complexity:** $O(n \cdot log(n))$
@@ -239,8 +240,8 @@ int main () {
 }
 ```
 
+
+
 **Solution in Python:**
 
-```python
-# To be added
-```
+I've never implemented Dijkstra in Python as it isn't my primary programming language. If any participant would like to implement the Dijkstra solution for this problem and send it over, I'll be glad to include it here.
